@@ -1,4 +1,4 @@
-extension NumberExtxnxx on num {
+extension NumberExt on num {
   num add(num numExt) {
     if (numExt <= 0) {
       throw ArgumentError('numExt must be greater than 0');
