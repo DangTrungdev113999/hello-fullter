@@ -30,15 +30,15 @@ void main(List<String> args) {
   Student<Class> F = Student(name: 'F');
 
   flutterO9.addStudent(
-    listStudents: [A, B],
+    listStudent: [A, B],
   );
 
   androidO9.addStudent(
-    listStudents: [B, C, D],
+    listStudent: [B, C, D],
   );
 
   iosO9.addStudent(
-    listStudents: [D, E, F],
+    listStudent: [D, E, F],
   );
 
   webO9.addStudent(
@@ -47,13 +47,15 @@ void main(List<String> args) {
 
   flutterO9.getInfoStudent();
 
-  int remainMembersOfFlutterO9 = flutterO9.remainMembers();
   print(
-      '\n Class ${flutterO9.className} miss ${remainMembersOfFlutterO9} students');
+      '\n Class ${flutterO9.className} miss ${flutterO9.remainMembers()} students');
 
   flutterO9.autoGenerateStudent();
 
   flutterO9.getInfoStudent();
+
+  print(
+      '\n Class ${flutterO9.className} miss ${flutterO9.remainMembers()} students');
 
   // Khởi tạo, thêm toàn bộ các học viên còn thiếu của mỗi lớp sao cho trong 1 lớp không có thành viên nào bị trùng tên
 }

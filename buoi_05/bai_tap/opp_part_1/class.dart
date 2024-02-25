@@ -24,7 +24,7 @@ abstract class Class {
   }
 
   void addStudent({
-    List<Student>? listStudents,
+    List<Student>? listStudent,
     Student? student,
   }) {
     if (student is Student) {
@@ -37,8 +37,8 @@ abstract class Class {
       }
     }
 
-    if (listStudents is List<Student>) {
-      for (Student student in listStudents) {
+    if (listStudent is List<Student>) {
+      for (Student student in listStudent) {
         if (currentStudents.length <= requireNumberOfStudent) {
           currentStudents.add(student);
           student.joinClass(this);
