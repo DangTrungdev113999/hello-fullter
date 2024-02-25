@@ -13,7 +13,8 @@ class AnimalOWater implements Animal {
     // ❔có cách nào cho đoạn print này xuống dòng được k thầy  ❔
     // ❔có cách nào viết print trong getInformation của Animal và gọi ở đây k thầy  ❔
     print(
-        'Environment of ${animalName == null ? 'noname' : animalName} : ${environmentOfAnimal.english} (${environmentOfAnimal.vietnames})');
+        '''Environment of ${animalName == null ? 'noname' : animalName} :
+         ${environmentOfAnimal.english} (${environmentOfAnimal.vietnames})''');
   }
 
   @override

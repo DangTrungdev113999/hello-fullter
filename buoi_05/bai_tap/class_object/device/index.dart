@@ -11,11 +11,12 @@ class Device {
   final String system;
   final Manufacturer manufacturer;
 
-  Device(
-      {required this.id,
-      required this.name,
-      required this.system,
-      required this.manufacturer});
+  Device({
+    required this.id,
+    required this.name,
+    required this.system,
+    required this.manufacturer,
+  });
 }
 
 void main(List<String> args) {
